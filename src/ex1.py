@@ -1,3 +1,6 @@
+from pprint import pprint
+
+
 def sort_people(list_name, field, direction):
     if direction == 'desc':
         direction = True
@@ -5,7 +8,7 @@ def sort_people(list_name, field, direction):
         direction = False
 
     result = sorted(list_name, key=lambda p: p[f'{field}'], reverse=direction)
-    print(result)
+    pprint(result)
 
 
 people_list = [
