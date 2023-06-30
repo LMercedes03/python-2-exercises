@@ -274,15 +274,16 @@ logic in the `Character` base class `fight()` method to make sure the hit points
 has finished executing.
 
 The `Fighter` and `Drawf` class must support this usage:
+
 ```python
     f = Fighter(18)
-    d = Dwarf(15)
-    print(f)
-    print(d)
-    f.fight(d)
-    d.fight(f)
-    print(f)
-    print(d)
+d = Dwarf(15)
+print(f)
+print(d)
+fight(d)
+fight(f)
+print(f)
+print(d)
 ```
 
 Example output:

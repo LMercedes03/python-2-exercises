@@ -1,12 +1,12 @@
 class WordCounter:
     def __init__(self, sentence):
+        self.word_count = None
         self.sentence = sentence
 
     def count_words(self):
         self.word_count = len(self.sentence.split())
 
     def get_word_count(self):
-        self.word_count = len(self.sentence.split())
         return self.word_count
 
     def get_shortest_word(self):
